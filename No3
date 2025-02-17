@@ -1,0 +1,18 @@
+package tugas2.no3;
+
+public class Tugas2No3 {
+
+    public static void main(String[] args) {
+
+        int ascii1 = '1';
+        int ascii2 = '2';
+        
+        int jumlah = ascii1 + ascii2;
+        
+        System.out.println("Kode Ascii dari 1 : " +ascii1);
+        System.out.println("Kode Ascii dari 2 : " +ascii2);
+        System.out.println("Jumlah Kode Ascii : " +jumlah);
+
+        }
+    
+}
