@@ -1,0 +1,46 @@
+package tugas2.no1;
+
+import java.util.Scanner;
+
+public class Tugas2No1 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Pilih operasi bilangan(+,-,*,/): ");
+        char operasi = input.next().charAt(0);
+        
+        System.out.println("Masukkan bilangan ke-1: ");
+        int angka1 = input.nextInt();
+        
+        System.out.println("Masukkan bilangan ke-2: ");
+        int angka2 = input.nextInt();
+        
+        System.out.println("Masukkan bilangan ke-3: ");
+        int angka3 = input.nextInt();
+        
+        float hasil = 0;
+        
+        switch(operasi){
+            case '+':
+                hasil = angka1 + angka2 + angka3;
+                break;
+            case '-':
+                hasil = angka1 - angka2 - angka3;
+                break;
+            case '*':
+                hasil = angka1 * angka2 * angka3;
+                break;
+            case '/':
+                if (angka2 == 0 || angka3 == 0) {
+                    System.out.println("Pembagian dengan nol tidak diperbolehkan");   
+                    return;
+                }
+                hasil = (float) angka1 / angka2 / angka3;
+                break;
+            default:
+                System.out.println("Error");
+        }
+        System.out.println("Hasil: " +hasil);
+    }
+}
