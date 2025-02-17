@@ -1,0 +1,23 @@
+package tugas2.no2;
+
+import java.util.Scanner;
+
+public class Tugas2No2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Berapa uang anda sekarang?: ");
+        int uang = input.nextInt();
+        
+        System.out.println("Apakah diluar hujan?(true/false): ");
+        boolean hujan = input.nextBoolean();
+        
+        if(uang>5000 && !hujan){
+            System.out.println("Anda bisa membeli gorengan");
+        }else{
+            System.out.println("Anda tidak bisa membeli gorengan");
+        }
+    }
+    
+}
